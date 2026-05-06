@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif
+}
+
+.about-grid
+{
+    display: flex;
+    flex-direction: row;
+    gap: 300px;
+}
+
+.about-image
+{
+    width: 30%;
+}
+.about-content
+{
+    padding: 0 20px 0 20px;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.about-content h2
+{
+   
+    font-size: 40px;
+    text-decoration: bold; 
+}
