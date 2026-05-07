@@ -11,13 +11,49 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 80vh;
+    height: auto;
     padding: 100px 20px;
     background-color: white;
     gap: 40px;
+    width: 100%;
+}
+
+.portfolio-section .container h2
+{
+    font-size: 40px;
+    color: #1E293B;
+    text-decoration: bold;
+    align-items: center;
+    justify-content: center;
+}
+
+.portfolio-section .container .portfolio-filters
+{
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.portfolio-section .container .portfolio-filters .filter-btn
+{
+    width: 100px;
+    height: 40px;
+    border-radius: 30px;
+    border: 3px solid #6366F1;
+    background: white;
+    color: #6366F1;
+}
+
+.portfolio-section .container .portfolio-filters .filter-btn.active
+{
+    background-color: #6366F1;
+    color: white;
 }
 
 .portfolio-item {
+    padding: 20px;
     border: 1px solid #ddd;
     border-radius: 30px;
 }
