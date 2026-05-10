@@ -4,68 +4,72 @@
     box-sizing: border-box;
     font-family: 'Segoe UI', sans-serif
 }
-.portfolio-section 
-{
-    width: 100%;
-}
 
+.portfolio-section
+{
+    padding: 100px 0;
+}
 
 .portfolio-section .container
 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: auto;
-    padding: 100px 20px;
-    background-color: white;
-    gap: 40px;
     width: 100%;
+    max-width: 1400px;
+    margin: 0 auto; 
 }
-
-.portfolio-section .container h2
+.portfolio-section h2
 {
-    font-size: 40px;
-    color: #1E293B;
-    text-decoration: bold;
-    align-items: center;
-    justify-content: center;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 60px;
 }
 
-.portfolio-section .container .portfolio-filters
+.portfolio-filters
 {
     display: flex;
-    gap: 20px;
-    width: 100%;
-    align-items: center;
     justify-content: center;
+    gap: 30px;
+    margin-bottom: 40px;
 }
 
-.portfolio-section .container .portfolio-filters .filter-btn
+.filter-btn
 {
-    width: 100px;
-    height: 40px;
-    border-radius: 30px;
-    border: 3px solid #6366F1;
-    background: white;
+    padding: 0.8rem 1.5rem;
+    border-radius: 999px;
+    font-weight: 500;
     color: #6366F1;
+    background-color: white;
+    border: 2px solid #6366F1;
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
 
-.portfolio-section .container .portfolio-filters .filter-btn.active
+.filter-btn.active
 {
     background-color: #6366F1;
     color: white;
 }
 
-.portfolio-item {
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 30px;
+.portfolio-grid
+{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+    gap: 30px;
 }
 
-.portfolio-grid {
+.portfolio-item 
+{
     width: 100%;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 100px;
+    max-width: 400px;
+    padding: 0.8rem 1.5rem;
+}
+
+.portfolio-item img
+{
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
 }
