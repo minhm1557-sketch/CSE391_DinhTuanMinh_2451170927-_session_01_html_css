@@ -4,6 +4,11 @@
     box-sizing: border-box;
     font-family: 'Segoe UI', sans-serif
 }
+.portfolio-section 
+{
+    width: 100%;
+}
+
 
 .portfolio-section .container
 {
@@ -59,7 +64,8 @@
 }
 
 .portfolio-grid {
+    width: 100%;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 100px;
 }
